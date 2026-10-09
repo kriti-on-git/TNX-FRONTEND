@@ -1,0 +1,16 @@
+
+# React Folder Structure: index.html, main.jsx, App.jsx ka relation
+ 
+Flow: index.html → main.jsx → App.jsx → Browser
+ 
+- index.html: Ekmaatra HTML file h ye, Isme sirf <div id="root"> hota hai, which is a khaali
+  container jahan React apna UI inject karega. aur, <script src="/src/main.jsx"> se JS load hota hai.
+ 
+- main.jsx: ye h entry point.. document.getElementById('root') se woh khaali wala div uthata hai,
+  aur createRoot() se <App /> ko uske andar render karta hai.
+ 
+- App.jsx: ye h Root component, aisa ai ne btaya, Yahan poori app ka main UI likha jaata hai.
+  Is se hum chhote components (Profile, Card) import karke use karte hain.
+ 
+Ek line me: index.html khaali div deta hai → main.jsx React ko usme inject krta hai
+→ App.jsx ke andar UI hota hai.
