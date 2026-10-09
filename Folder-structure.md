@@ -1,4 +1,3 @@
-
 # React Folder Structure: index.html, main.jsx, App.jsx ka relation
  
 Flow: index.html → main.jsx → App.jsx → Browser
